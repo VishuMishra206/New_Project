@@ -1,37 +1,16 @@
 
-public class Employee {
- 
-	private final String name;
-	public String getName() {
-		return name;
-	}
+public abstract class Employee {
 
-	public Gender getGender() {
-		return gender;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	private final Gender gender;
-	private final int age;
+	private String name="vishu";
+	private int empid=50023;
 	
-Employee(String name , Gender gender, int age)
-{
-	this.name=name;
-	this.gender=gender;
-	this.age=age;
+	public void Employeedetails()
+	{
+		System.out.println("name of employee : "+ name);
+		System.out.println("employee Id : " + empid);
+	}
+	 public abstract void confidentialEmployee(int s, String p);
 	
-}
-
-public String toString()
- {
-	return String.format("%s--%s--%d", name,gender,age);
- }
-
+	 
 
 }
-
-
-
